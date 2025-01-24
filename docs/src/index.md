@@ -113,7 +113,6 @@ As a recap, your code should look like:
 │── Manifest.toml    # your docs enviroment
 │── Project.toml 
 ```
-
 Let's take a look at the content of 
 
 ### Hosting it in GitHub
@@ -131,23 +130,3 @@ Thanks for reading! If you think that you owe me a drink now buy me a coffee at:
 https://buymeacoffee.com/acroscarrillo
 
 It's super quick and easy, no account needed.
-
-
-# Contents
-Here's the full list of contents
-```@contents
-```
-
-## Documentation
-```@meta
-CurrentModule = MinimalScientificDocs
-```
-
-```@autodocs
-Modules = [MinimalScientificDocs]
-```
-
-
-## Index
-```@index
-```
