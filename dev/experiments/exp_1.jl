@@ -9,8 +9,9 @@ using Plots, LaTeXStrings
 
 histogram(randn(100000,1),legend=false,xlabel=L"X",ylabel="counts")
 
+# From now onwards, no need to import anything again, it was imported above (remember this run in the same Julia file).
+
 # ### A friendly Wiener process plot
-# No need to import anything again, it was imported above (remember this run in the same Julia file).
 
 # A Wiener Process $W_t$ (also called standard Brownian motion) is a stochastic process with the following properties:
 
@@ -21,7 +22,7 @@ histogram(randn(100000,1),legend=false,xlabel=L"X",ylabel="counts")
 # 5. No drift: The expected value is $\mathbb{E}[W_t] = 0$.
 # 6. Variance grows linearly: $\text{Var}(W_t) = t$.
 
-# ## Mathematical Definition:
+# Mathematical Definition:
 #  ```math
 # dW_t \sim \mathcal{N}(0, dt)
 # ```
