@@ -123,8 +123,12 @@ To monitor and debug whatever you will inevitably mess up, we can keep track of 
 
 With this, either you have a running page or you are *very* close to one, a few debugs away. Remember that you can always clone this very repo and try running it yourself. This way not only you will learn fast but also you will start from something that (hopufully) works and take incremental steps towards modifying it for your code. 
 
-Thanks for reading! Consider 
+# Thank you 
+Thanks for reading! If you think that you owe me a drink now buy me a coffee at:
 
+https://buymeacoffee.com/acroscarrillo
+
+It's super quick and easy, no account needed.
 
 
 # Contents
