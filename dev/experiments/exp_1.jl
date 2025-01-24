@@ -13,7 +13,8 @@ histogram(randn(100000,1),legend=false,xlabel=L"X",ylabel="counts")
 # No need to import anything again, it was imported above (remember this run in the same Julia file).
 
 # A Wiener Process $W_t$ (also called standard Brownian motion) is a stochastic process with the following properties:
-# 1. $W_0 = 0$: The process starts at zero.
+
+# 1. The process starts at zero: $W_0 = 0$: .
 # 2. Independent increments: The change $W_t - W_s$ for $t > s$ is independent of past values.
 # 3. Stationary increments: $W_t - W_s \sim \mathcal{N}(0, t-s)$, meaning the increments are normally distributed with mean 0 and variance $t - s$.
 # 4. Continuous paths: The function $W_t$ is continuous with probability 1.
