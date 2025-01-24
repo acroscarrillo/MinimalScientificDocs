@@ -23,6 +23,7 @@ Literate.markdown(
 makedocs(sitename="Minimal Scientific Docs",
     pages = [
         "How to make a page like this" => "index.md",
+        "Home" => "home.md",
         "Numerical Experiments" => ["exp_1.md",
                             "exp_2.md",
                             "exp_3.md",],
