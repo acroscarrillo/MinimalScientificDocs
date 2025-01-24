@@ -1,4 +1,5 @@
 # # [Plot and Histogram](@id exp)
+
 # The following page has been generated entirely within a single Julia file (`/docs/src/experiments/exp_1.jl`), see its source code to see how easy it was done. 
 
 # As a show case, here's some random plots using in this case `Plots.jl`. Dont forget to add any necessary packages to the enviroment and to import them!
