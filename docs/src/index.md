@@ -59,6 +59,28 @@ end
 ```
 For this minimal toy example, we dont even have an `/experiments` folder since we will add those to the documentation exclusively. Dont worry if you do have, that's good, we will relocate it soon.
 
+Finally, the top level enviroment inside `Project.toml` (and `Manifest.toml`) contains:
+```
+name = "MinimalScientificDocs"
+uuid = "123e4567-e89b-12d3-a456-426614174000"
+authors = ["Alejandro Cros Carrillo de Albornoz"]
+version = "0.1.0"
+
+[deps]
+ColorSchemes = "35d6a980-a343-548e-a6ea-1d62b119f2f4"
+Documenter = "e30172f5-a6a5-5a46-863b-614d45cd2de4"
+LinearAlgebra = "37e2e46d-f89d-539d-b4ee-838fcccc9c8e"
+Literate = "98b081ad-f1c9-55d3-8b20-4c87d4299306"
+Plots = "91a5bcdd-55d7-5caf-9e0b-520d859cae80"
+
+[compat]
+ColorSchemes = "3.27.1"
+Documenter = "1.8.0"
+Literate = "2.20.1"
+Plots = "1.40.9"
+```
+***Okay, this is important, you need to match the `[name]` with that of your module/package which in turn needs to be inside a file named the same way.*** With this we mean that our toy module `MinimalScientificDocs` is inside a file `/src/MinimalScientificDocs.jl` and in the `Project.toml` above `name = "MinimalScientificDocs"`.
+
 ### What we need to do
 This documentation is entirely hosted in GitHub (although you can also view it locally on your machine) and it is updated automatically everytime you push an update on your code to it. Pretty neat! However, for all of that to work, we need to set things up correctly so follow closely because it is *very* finicky. 
 
@@ -105,11 +127,11 @@ Here's the full list of contents
 
 ## Documentation
 ```@meta
-CurrentModule = QuantumGeometricComplexity
+CurrentModule = MinimalScientificDocs
 ```
 
 ```@autodocs
-Modules = [QuantumGeometricComplexity]
+Modules = [MinimalScientificDocs]
 ```
 
 

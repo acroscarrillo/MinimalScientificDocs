@@ -1,4 +1,4 @@
-# src/Test_Module.jl
+# src/MinimalScientificDocs.jl
 module MinimalScientificDocs
 
 export mul_by_2
