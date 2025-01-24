@@ -6,7 +6,7 @@ using Pkg
 Pkg.instantiate() # fixes an error where GitHub forgets to instantiate the enviroment.
 
 using Plots
-using LaTeXStrimngs
+using LaTeXStrings
 
 function Wiener_process(T, N, σ, W_0; N_processes=1)
     dt = T / N  # Time step size
