@@ -34,4 +34,3 @@ makedocs(sitename="Minimal Scientific Docs",
 deploydocs(
     repo = "https://github.com/acroscarrillo/MinimalScientificDocs"
 )
-
