@@ -7,7 +7,7 @@ Animations are a great way of conveying science which extend well beyond the cap
 using Pkg
 Pkg.instantiate()
 
-using Plots
+using Plots, LaTeXStrings
 
 # Function to generate Wiener process paths
 function geometric_brownian_motion(T, N, μ, σ, S_0; N_processes=1)
