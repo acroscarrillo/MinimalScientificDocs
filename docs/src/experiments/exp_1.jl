@@ -12,22 +12,23 @@ histogram(randn(100000,1),legend=false,xlabel=L"X",ylabel="counts")
 # ### A friendly Wiener process plot
 # No need to import anything again, it was imported above (remember this run in the same Julia file).
 
-# A **Wiener Process** \( W_t \) (also called standard Brownian motion) is a stochastic process with the following properties:
+# A Wiener Process $W_t$ (also called standard Brownian motion) is a stochastic process with the following properties:
 
-# 1. **\( W_0 = 0 \)**: The process starts at zero.
-# 2. **Independent increments**: The change \( W_t - W_s \) for \( t > s \) is independent of past values.
-# 3. **Stationary increments**: \( W_t - W_s \sim \mathcal{N}(0, t-s) \), meaning the increments are normally distributed with mean 0 and variance \( t - s \).
-# 4. **Continuous paths**: The function \( W_t \) is continuous with probability 1.
-# 5. **No drift**: The expected value is \( \mathbb{E}[W_t] = 0 \).
-# 6. **Variance grows linearly**: \( \text{Var}(W_t) = t \).
+# 1. $W_0 = 0$: The process starts at zero.
+# 2. Independent increments: The change $W_t - W_s$ for $t > s$ is independent of past values.
+# 3. Stationary increments: $W_t - W_s \sim \mathcal{N}(0, t-s)$, meaning the increments are normally distributed with mean 0 and variance $t - s$.
+# 4. Continuous paths: The function $W_t$ is continuous with probability 1.
+# 5. No drift: The expected value is $\mathbb{E}[W_t] = 0$.
+# 6. Variance grows linearly: $\text{Var}(W_t) = t$.
 
-# ### Mathematical Definition:
+# ## Mathematical Definition:
 # \[
 # dW_t \sim \mathcal{N}(0, dt)
 # \]
-# where \( dW_t \) represents a small random movement over an infinitesimal time step \( dt \).
+# where $dW_t$ represents a small random movement over an infinitesimal time step $dt$.
 
-# The Wiener process is fundamental in stochastic calculus and financial modeling, forming the basis for **Geometric Brownian Motion (GBM)** used in stock price modeling.
+# The Wiener process is fundamental in stochastic calculus and financial modeling, forming the basis for Geometric Brownian Motion (GBM) used in stock price modeling.
+
 function Wiener_process(T, N, σ, W_0; N_processes=1)
     dt = T / N  # Time step size
     t = range(0, T, length=N+1)  # Time points
