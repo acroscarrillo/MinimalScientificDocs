@@ -4,8 +4,6 @@
 
 # ### A super simple animation
 
-# Watch how easy they are to implement! As before, check all the details of this page in its source code at `/docs/src/experiments/exp_2.jl`.
-
 using Pkg
 Pkg.instantiate()
 
