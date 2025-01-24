@@ -1,8 +1,8 @@
 # # [Animations](@id exp)
-
+Animations are a great way of conveying science which extend well beyond the capabilities of standard static papers. 
 
 # ### An interesting animation
-# Yes sir, animations are supported too!
+# Yes, animations are supported and are super easy to do!
 
 using Pkg
 Pkg.instantiate()
