@@ -3,6 +3,7 @@
 # Animations are a great way of conveying science which extend well beyond the capabilities of standard static papers. 
 
 # ### A super simple animation
+
 using Pkg
 Pkg.instantiate()
 
