@@ -1,13 +1,16 @@
 # # [Plot and Histogram](@id exp)
 # The following page has been generated entirely within a Julia file, see its source code to see how easy it was done. As a show case, here's some random plots using in this case `Plots.jl`. Dont forget to add any necessary packages to the enviroment and to import them.
 
-# ### A friendly Wiener process plot
+# ### A familiar normal histogram
 using Pkg
 Pkg.instantiate() # fixes an error where GitHub forgets to instantiate the enviroment.
 
-using Plots
-using LaTeXStrings
+using Plots, LaTeXStrings
 
+histogram(randn(100000,1),normalise=:pdf,legend=false,xlabel=L"X",ylabel="counts")
+
+# ### A friendly Wiener process plot
+# No need to import anything again, it was imported above (remember this run in the same Julia file).
 function Wiener_process(T, N, σ, W_0; N_processes=1)
     dt = T / N  # Time step size
     t = range(0, T, length=N+1)  # Time points
@@ -17,7 +20,3 @@ function Wiener_process(T, N, σ, W_0; N_processes=1)
 end
 
 plot(Wiener_process(10, 1000, 1, 0, N_processes=10),ylabel=L"W",xlabel=L"t",legend=false)
-
-
-# ### A rather boring normal
-histogram(randn(100000,1),normalise=:pdf,legend=false)
