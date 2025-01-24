@@ -1,6 +1,6 @@
-name = "QuantumGeometricComplexity"
+name = "MinimalScientificDocs"
 uuid = "123e4567-e89b-12d3-a456-426614174000"
-authors = ["Your Name <youremail@example.com>"]
+authors = ["Alejandro Cros Carrillo de Albornoz"]
 version = "0.1.0"
 
 [deps]
