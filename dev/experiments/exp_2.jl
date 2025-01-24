@@ -1,4 +1,4 @@
-# # [Scatter and Heatmap](@id exp)
+# # [Animation](@id exp)
 
 
 # ### An interesting scatter
@@ -8,7 +8,9 @@ Pkg.instantiate()
 
 using Plots
 
-scatter(rand(100,2))
+@gif for n=1:100
+    heatmap(randn(100,100))
+end
 
 # ### A rather puzzling heatmap
 # This is a heatmap of a random normal matrix.
