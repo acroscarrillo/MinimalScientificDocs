@@ -15,6 +15,6 @@ Inside the [docs page](https://acroscarrillo.github.io/MinimalScientificDocs/dev
 # Buy me a coffee? 
 Thanks for reading! If you think that you owe me a drink now buy me a coffee at:
 
-https://buymeacoffee.com/acroscarrillo
+[https://buymeacoffee.com/acroscarrillo](https://buymeacoffee.com/acroscarrillo)
 
 It's super quick and easy, no account needed.

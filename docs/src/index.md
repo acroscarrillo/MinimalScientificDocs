@@ -79,7 +79,7 @@ Documenter = "1.8.0"
 Literate = "2.20.1"
 Plots = "1.40.9"
 ```
-***Okay, this is important, you need to match the `[name]` with that of your module/package which in turn needs to be inside a file named the same way.*** With this we mean that our toy module `MinimalScientificDocs` is inside a file `/src/MinimalScientificDocs.jl` and in the `Project.toml` above `name = "MinimalScientificDocs"`.
+**Okay, this is important, you need to match the `[name]` with that of your module/package which in turn needs to be inside a file named the same way.** With this we mean that our toy module `MinimalScientificDocs` is inside a file `/src/MinimalScientificDocs.jl` and in the `Project.toml` above `name = "MinimalScientificDocs"`.
 
 ### What we need to do
 This documentation is entirely hosted in GitHub (although you can also view it locally on your machine) and it is updated automatically everytime you push an update on your code to it. Pretty neat! However, for all of that to work, we need to set things up correctly so follow closely because it is *very* finicky. 
@@ -127,6 +127,6 @@ With this, either you have a running page or you are *very* close to one, a few 
 # Buy me a coffee? 
 Thanks for reading! If you think that you owe me a drink now buy me a coffee at:
 
-https://buymeacoffee.com/acroscarrillo
+[https://buymeacoffee.com/acroscarrillo](https://buymeacoffee.com/acroscarrillo)
 
-It's super quick and easy, no account needed.
+It's super quick and easy, no account needed. :)
