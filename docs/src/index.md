@@ -117,13 +117,15 @@ As a recap, your code should look like:
 Let's take a look at the content of 
 
 ### Hosting it in GitHub
-So you have commited everything to your brand new GitHub repository but nothing happended. That's normal, we need to tell GitHub that it needs to actually do something. Fortunately, it takes literally 3 clicks to do that. So we enter to our repo, and we click `Settings` on the top bar. Inside `Settings`, we look for `Pages`in the sidebar and we click it. Next, we make sure that "Build and deployment`'s Source is set to `Deploy from a branch and right underneath, in `Branch`, we select `gh-pages` (for GitHub pages) and leave the `Select folder` to be `/(root)`. And that's it! Do not touch anything else. 
+So you have commited everything to your brand new GitHub repository but nothing happended. That's normal, we need to tell GitHub that it actually needs to do something. Fortunately, it takes literally 3 clicks to do that. So we enter to our repo, and we click `Settings` on the top bar. Inside `Settings`, we look for `Pages`in the sidebar and we click it. Next, we make sure that `Build and deployment`'s Source is set to `Deploy from a branch` and right underneath, in `Branch`, we select `gh-pages` (for GitHub pages) and leave the `Select folder` to be `/(root)`. And that's it! Do not touch anything else. 
+
+So how do you update your GitHub documentation page? You simply commit new changes to your local code on your machine to GitHub and it will automatically update it (it does take a few mins though). 
 
 To monitor and debug whatever you will inevitably mess up, we can keep track of what GitHub does in the background everytime we update our repo. For that, we will head to `Actions` right in the same top bar as `Settings` were. Inside `Actions`, we can see all the commits/workflows-runs we have done. If there's a green tick, all should be good. If there's a red cross something went wrong: simply click on it and investigate what happened by reading the steps GitHub did and what went wrong. Hint: it was on your side.
 
 With this, either you have a running page or you are *very* close to one, a few debugs away. Remember that you can always clone this very repo and try running it yourself. This way not only you will learn fast but also you will start from something that (hopufully) works and take incremental steps towards modifying it for your code. 
 
-# Thank you 
+# Buy me a coffee? 
 Thanks for reading! If you think that you owe me a drink now buy me a coffee at:
 
 https://buymeacoffee.com/acroscarrillo
