@@ -11,7 +11,7 @@ end
 """ 
     mul_by_4(x)
 
-Multiplies x by 2.
+Multiplies x by 4.
 """
 function mul_by_4(x) 
     return 4*x 
