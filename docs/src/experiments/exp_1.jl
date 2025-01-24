@@ -1,5 +1,5 @@
 # # [Plot and Histogram](@id exp)
-# The following page has been generated entirely within a Julia file, see its source code to see how easy it was done. As a show case, here's some random plots using in this case `Plots.jl`. Dont forget to add any necessary packages to the enviroment and to import them.
+# The following page has been generated entirely within a Julia file (`/docs/src/experiments/exp_1.jl`), see its source code to see how easy it was done. As a show case, here's some random plots using in this case `Plots.jl`. Dont forget to add any necessary packages to the enviroment and to import them.
 
 # ### A familiar normal histogram
 using Pkg
@@ -7,7 +7,7 @@ Pkg.instantiate() # fixes an error where GitHub forgets to instantiate the envir
 
 using Plots, LaTeXStrings
 
-histogram(randn(100000,1),normalise=:pdf,legend=false,xlabel=L"X",ylabel="counts")
+histogram(randn(100000,1),legend=false,xlabel=L"X",ylabel="counts")
 
 # ### A friendly Wiener process plot
 # No need to import anything again, it was imported above (remember this run in the same Julia file).
