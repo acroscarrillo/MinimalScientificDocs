@@ -3,8 +3,8 @@
 *A minimal documentation template for scientific work you can deploy as a webpage using Julia and GitHub only.*
 
 | **Documentation**                                                               | 
-
-[![docsdev](https://img.shields.io/badge/docs-dev-lightblue.svg)](https://acroscarrillo.github.io/MinimalScientificDocs/dev/)
+|:-------------------------------------------------------------------------------:|
+|[![docsdev](https://img.shields.io/badge/docs-dev-lightblue.svg)](https://acroscarrillo.github.io/MinimalScientificDocs/dev/)|
 
 # Usage
 
