@@ -13,7 +13,9 @@ end
 experiments_md_files = [exp_file for exp_file in joinpath(@__DIR__, "src/experiments/markdown")]
 
 display("beging makedocs...")
-display("files found $experiments_md_files")
+display(@__DIR__)
+display(experiments_md_files)
+
 makedocs(sitename="Minimal Scientific Docs",
     pages = [
         "How to make a page like this" => "index.md",
