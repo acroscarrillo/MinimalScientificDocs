@@ -124,7 +124,8 @@ As a recap, your code should look like:
 │── Manifest.toml    # your docs enviroment
 │── Project.toml 
 ```
-Let's take a look at the content of....
+Let's start with the contents of `/docs/make.jl`, arguably the most important file of this project:
+
 
 
 bla bla bla
@@ -139,6 +140,11 @@ So how do you update your GitHub documentation page? You simply commit new chang
 To monitor and debug whatever you will inevitably mess up, you can keep track of what GitHub does in the background everytime you update your repo. For that, you need to head to `Actions` right in the same top bar as `Settings` were. Inside `Actions`, you can see all the commits/workflows-runs you have done. If there's a green tick, all should be good. If there's a red cross something went wrong: simply click on it and investigate what happened by reading the steps GitHub did and what went wrong.
 
 With this, either you have a running page or you are *very* close to one, a few debugs away. **Remember that you can always clone this very repo and try running it yourself.** This way not only you will learn fast but also you will start from something that (hopufully) works and take incremental steps towards modifying it for your code. 
+
+# Typos? Bugs? Let me know!
+If you see any typos or experience any bugs let me know by creating an issue in this page's GitHub. 
+
+Your feedback is very welcomed!
 
 # Buy me a coffee? 
 Thanks for reading! If you think that you owe me a drink now, buy me a coffee at:
