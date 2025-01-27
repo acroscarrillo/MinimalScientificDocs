@@ -124,12 +124,9 @@ As a recap, your code should look like:
 │── Manifest.toml    # your docs enviroment
 │── Project.toml 
 ```
-Let's start with the contents of `/docs/make.jl`, arguably the most important file of this project:
+Let's start with the contents of `/docs/make.jl`, arguably the most important file of this project. 
 
-
-
-bla bla bla
-
+Blab lbalb a
 
 
 ### Hosting it in GitHub
