@@ -10,7 +10,7 @@ for file in readdir(joinpath(@__DIR__, experiments_path))
 end
 
 # group all generated md files inside src/experiments/markdown"
-experiments_md_files = readdir(joinpath(@__DIR__, "src/experiments/markdown"),join=true)
+experiments_md_files = ["experiments/" * file for file in readdir(joinpath(@__DIR__, "src/experiments/markdown"))]
 
 display("beging makedocs...")
 display(@__DIR__)
