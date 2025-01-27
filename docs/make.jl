@@ -5,13 +5,18 @@ using Documenter, MinimalScientificDocs, Literate
 # literate all files inside /docs/experiments/ into src/experiments/markdown/
 experiments_path = "src/experiments/"
 
+display("beging literating...")
 for file in readdir(joinpath(@__DIR__, experiments_path))
     Literate.markdown(joinpath(@__DIR__, experiments_path, file), joinpath(@__DIR__, "src/experiments/markdown"); credit = false)
 end
- 
-# group all generated md files inside src/experiments/markdown"
-experiments_md_files = [exp_file for exp_file in joinpath(@__DIR__, "src/experiments/markdown")]
+display("finished literating!")
 
+# group all generated md files inside src/experiments/markdown"
+display("beging grouping...")
+experiments_md_files = [exp_file for exp_file in joinpath(@__DIR__, "src/experiments/markdown")]
+display("finished grouping!")
+
+display("beging makedocs...")
 makedocs(sitename="Minimal Scientific Docs",
     pages = [
         "How to make a page like this" => "index.md",
@@ -20,6 +25,8 @@ makedocs(sitename="Minimal Scientific Docs",
         "Citing this work" => "citing.md"
     ]
 )
+display("finished makedocs!")
+
 
 # # literate the tutorial
 # Literate.markdown(
