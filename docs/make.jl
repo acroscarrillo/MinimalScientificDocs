@@ -3,7 +3,7 @@ push!(LOAD_PATH,"../src/")
 using Documenter, MinimalScientificDocs, Literate
 
 # literate all files inside /docs/experiments/ into src/experiments/markdown/
-experiments_path = "src/experiments"
+experiments_path = "src/experiments/"
 
 for file in readdir(experiments_path)
     Literate.markdown(joinpath(@__DIR__, experiments_path, file), joinpath(@__DIR__, "src/experiments/markdown"); credit = false)
