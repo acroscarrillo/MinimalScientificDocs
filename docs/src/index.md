@@ -1,8 +1,5 @@
 # What is this?
-Here you will learn how to make a documentation website just like this one using exclusively Julia thanks to Documenter.jl. From scratch for absolute beginners.
-
-It took me a while to figure this one out so I thought I might as well share it! Enjoy!
-
+Here you will learn how to make a documentation website just like this one using exclusively Julia thanks to Documenter.jl from scratch for absolute beginners. It took me a while to figure this one out so I thought I might as well share it. Enjoy!
 
 # Welcome!
 This toy documentation is ment to serve as a minimal working template for your scientific work. In particular, it is well suited for basic repositories which are structured around a `/src` folder containing all the heavy lifting code which numerical experiments (inside, say `/experiments`) use. Of course, you may do something else and still find these docs useful. Ideally, all scientific papers should be accompanied by a documentation page (like this one) for faster communication/understanding and reproduction/usage.  
@@ -31,14 +28,14 @@ I believe respectable *scientific* code should be organised like so:
 │  │── exp_2_fig.svg  
 ...
 ```
-If you dont recognise the `.toml` files, you need to learn what Julia enviroments are and how to use them. It's easy, it's useful and **you wont be able to create a page like this without it**. 
+If you dont recognise the `.toml` files, you need to learn what Julia enviroments are and how to use them. It's actually easy, it's useful and **you wont be able to create a page like this without it**. 
 
 So go ahead and fix your code until it follows the structure above.
 
 For reproduction purposes, this very page contains the following code inside `/src`:
 ```
 # src/MinimalScientificDocs.jl
-module Test_Module
+module MinimalScientificDocs
 
 export mul_by_2, mul_by_4
 
@@ -66,7 +63,7 @@ function mul_by_4(x)
     return 4*x 
 end
 ```
-For this minimal toy example, we dont even have an `/experiments` folder since we will add those to the documentation exclusively. Dont worry if you do have it, that's good, we will relocate it soon.
+*Note: For now, we havent added an `/experiments` folder yet. This is because, just like in this webpage, we want to structure them to be pages of their own. To do this, we will need to relocate them to a different folder we will create soon. So stay put on that!*
 
 Finally, the top level enviroment inside `Project.toml` (and `Manifest.toml`) contains in my case:
 ```
