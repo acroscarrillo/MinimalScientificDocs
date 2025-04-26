@@ -1,6 +1,6 @@
 # docs/make.jl
-Pkg.instantiate() 
 push!(LOAD_PATH,"../src/")
+Pkg.instantiate() 
 using Documenter, MinimalScientificDocs, Literate
 Pkg.instantiate() 
 
