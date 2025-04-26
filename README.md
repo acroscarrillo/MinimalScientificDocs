@@ -1,3 +1,8 @@
+<p align="center">
+    <img width="200px" src="https://acroscarrillo.github.io/MinimalScientificDocs/dev/assets/logo.png"/>
+</p>
+
+
 # Minimal Scientific Docs
 
 *A minimal documentation template for scientific work you can deploy as a webpage using Julia and GitHub only.*
