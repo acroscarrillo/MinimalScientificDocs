@@ -1,7 +1,8 @@
 # docs/make.jl
+Pkg.instantiate() 
 push!(LOAD_PATH,"../src/")
 using Documenter, MinimalScientificDocs, Literate
-Pkg.instantiate()
+Pkg.instantiate() 
 
 # literate all files inside /docs/experiments/ into src/experiments/markdown/
 experiments_path = "src/experiments/"
