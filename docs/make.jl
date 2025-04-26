@@ -1,6 +1,7 @@
 # docs/make.jl
 push!(LOAD_PATH,"../src/")
 using Documenter, MinimalScientificDocs, Literate
+Pkg.instantiate()
 
 # literate all files inside /docs/experiments/ into src/experiments/markdown/
 experiments_path = "src/experiments/"
@@ -12,10 +13,6 @@ end
 # group all generated md files inside src/experiments/markdown"
 experiments_md_files = ["experiments/markdown/" * file for file in readdir(joinpath(@__DIR__, "src/experiments/markdown"))]
 
-display("beging makedocs...")
-display(@__DIR__)
-display(experiments_md_files)
-
 makedocs(sitename="Minimal Scientific Docs",
     pages = [
         "How to make a page like this" => "index.md",
@@ -24,8 +21,6 @@ makedocs(sitename="Minimal Scientific Docs",
         "Citing this work" => "citing.md"
     ]
 )
-display("finished makedocs!")
-
 
 # # literate the tutorial
 # Literate.markdown(
